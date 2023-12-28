@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="car1" class="_02_car.SimpleCar"/>
+
+    <bean name="car2" class="_02_car.SimpleCar">
+        <constructor-arg value="BelGee"/>
+    </bean>
+
+    <bean name="car3" class="_02_car.SimpleCar">
+        <property name="id" value="1"/>
+    </bean>
+
+    <bean name="car4" class="_02_car.SimpleCar">
+        <constructor-arg index="0" value="2"/>
+        <constructor-arg index="1" value="Ferrari"/>
+    </bean>
+
+    <bean name="car5" class="_02_car.SimpleCar">
+        <constructor-arg name="id" value="2"/>
+        <constructor-arg name="model" value="Ferrari"/>
+    </bean>
+
+    <bean name="car6" class="_02_car.SimpleCar">
+        <constructor-arg index="1" value="Nissan"/>
+        <constructor-arg index="0" value="3"/>
+    </bean>
+
+
+
+    <bean name="eco" class="_02_car.Engine">
+        <constructor-arg value="ECO"/>
+    </bean>
+
+    <bean name="car7" class="_02_car.ComplexCar">
+        <constructor-arg name="id" value="7"/>
+        <constructor-arg name="model" value="Tesla"/>
+        <constructor-arg name="engine" ref="eco"/>
+    </bean>
+</beans>
