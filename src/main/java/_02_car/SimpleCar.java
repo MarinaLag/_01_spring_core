@@ -7,7 +7,7 @@ public class SimpleCar {
     private String model;
 
     public SimpleCar() {
-        model = "Default model";
+        model = "Default model"; // чтобы xml знал какое значение куда, т. к. у него все string
     }
 
     public SimpleCar(String model) {

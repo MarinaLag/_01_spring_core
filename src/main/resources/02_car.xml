@@ -3,37 +3,38 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<!--конструктор по умолчанию-->
     <bean name="car1" class="_02_car.SimpleCar"/>
-
+<!--конструктор с одним параметром model, а id-по умолчанию-->
     <bean name="car2" class="_02_car.SimpleCar">
         <constructor-arg value="BelGee"/>
     </bean>
-
+<!--конструктор с model-по умолчанию, а id- про сетторили-->
     <bean name="car3" class="_02_car.SimpleCar">
         <property name="id" value="1"/>
     </bean>
-
+<!--конструктор с параметром по индексу id[0] - ,,,, и model[0]-,,,-->
     <bean name="car4" class="_02_car.SimpleCar">
         <constructor-arg index="0" value="2"/>
         <constructor-arg index="1" value="Ferrari"/>
     </bean>
-
+<!--конструктор с параметром id - ,,,, и model-,,,-->
     <bean name="car5" class="_02_car.SimpleCar">
         <constructor-arg name="id" value="2"/>
         <constructor-arg name="model" value="Ferrari"/>
     </bean>
-
+<!--конструктор с параметром по индексу id[0]- ,,,, и model[1]-,,,-->
     <bean name="car6" class="_02_car.SimpleCar">
         <constructor-arg index="1" value="Nissan"/>
         <constructor-arg index="0" value="3"/>
     </bean>
 
-
-
+    <!--добавление еще одного класса-->
+    <!--создание объекта (двигатель)класса Engine-->
     <bean name="eco" class="_02_car.Engine">
         <constructor-arg value="ECO"/>
     </bean>
-
+    <!--создание авто класса ComplexCar с двигателем-->
     <bean name="car7" class="_02_car.ComplexCar">
         <constructor-arg name="id" value="7"/>
         <constructor-arg name="model" value="Tesla"/>

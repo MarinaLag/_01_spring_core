@@ -1,7 +1,7 @@
 package _02_car;
 
 public class Engine {
-    public String type;
+    public String type; // тип - дизель, газ и тд
 
     public Engine(String type) {
         this.type = type;

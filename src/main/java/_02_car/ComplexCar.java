@@ -18,7 +18,7 @@ public class ComplexCar {
         return new StringJoiner(", ", ComplexCar.class.getSimpleName() + "[", "]")
                 .add("id=" + id)
                 .add("model='" + model + "'")
-                .add("engine=" + engine.getType())
+                .add("engine=" + engine.getType()) // значение
                 .toString();
     }
 }

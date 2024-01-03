@@ -16,10 +16,10 @@ public class Main02 {
         cars.add(ctx.getBean("car5", SimpleCar.class));
         cars.add(ctx.getBean("car6", SimpleCar.class));
 
+        System.out.println("========SimpleCar============");
         cars.forEach(System.out::println);
 
-
-        System.out.println("=======================");
+        System.out.println("==========ComplexCar=============");
         var car7 =ctx.getBean("car7",ComplexCar.class);
         System.out.println(car7);
     }
