@@ -13,6 +13,10 @@ public class ComplexCar {
         this.engine = engine;
     }
 
+    public ComplexCar(Engine engine){
+        this.engine = engine;
+    }
+
     @Override
     public String toString() {
         return new StringJoiner(", ", ComplexCar.class.getSimpleName() + "[", "]")

@@ -30,11 +30,11 @@
     </bean>
 
     <!--добавление еще одного класса-->
-    <!--создание объекта класса Engine-->
+    <!--создание объекта (двигатель)класса Engine-->
     <bean name="eco" class="_02_car.Engine">
         <constructor-arg value="ECO"/>
     </bean>
-    <!--создание авто класса ComplexCar-->
+    <!--создание авто класса ComplexCar с двигателем-->
     <bean name="car7" class="_02_car.ComplexCar">
         <constructor-arg name="id" value="7"/>
         <constructor-arg name="model" value="Tesla"/>
