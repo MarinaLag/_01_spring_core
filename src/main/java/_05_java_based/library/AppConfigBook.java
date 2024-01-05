@@ -6,7 +6,7 @@ import java.util.List;
 
 public class AppConfigBook {
     @Bean
-    public List<Book> books(){
+    public List<Book> books() {
         return List.of(
                 new Book("Bukvar"),
                 new Book("Kama s utra"),
@@ -15,7 +15,7 @@ public class AppConfigBook {
     }
 
     @Bean
-    public Library library(){
+    public Library library() {
         return new Library(1);
     }
 

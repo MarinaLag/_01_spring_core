@@ -6,7 +6,7 @@ import java.util.StringJoiner;
 
 public class AutoCar {
     private int id;
-    private  String model;
+    private String model;
     private Engine engine;
 
     public AutoCar(Engine engine) {

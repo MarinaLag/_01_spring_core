@@ -11,7 +11,7 @@ public class Main05_01 {
 
         var ctx = new AnnotationConfigApplicationContext(AppConfigCar.class);
 
-        System.out.println(ctx.getBean("mess",String.class));
+        System.out.println(ctx.getBean("mess", String.class));
 
         var car1 = ctx.getBean("car1", SimpleCar.class);
         var car2 = ctx.getBean("car2", SimpleCar.class);
@@ -23,7 +23,7 @@ public class Main05_01 {
         System.out.println("car3 " + car3);
 
         System.out.println("==================");
-        var cars = Arrays.asList(car1,car2,car3);
+        var cars = Arrays.asList(car1, car2, car3);
         cars.forEach(System.out::println);
     }
 }

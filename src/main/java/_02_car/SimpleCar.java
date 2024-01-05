@@ -19,7 +19,7 @@ public class SimpleCar {
         this.model = model;
     }
 
-    public SimpleCar(String model,int id) {
+    public SimpleCar(String model, int id) {
         this.id = id;
         this.model = model;
     }

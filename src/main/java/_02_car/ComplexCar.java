@@ -4,7 +4,7 @@ import java.util.StringJoiner;
 
 public class ComplexCar {
     private int id;
-    private  String model;
+    private String model;
     private Engine engine;
 
     public ComplexCar(int id, String model, Engine engine) {
@@ -13,7 +13,7 @@ public class ComplexCar {
         this.engine = engine;
     }
 
-    public ComplexCar(Engine engine){
+    public ComplexCar(Engine engine) {
         this.engine = engine;
     }
 

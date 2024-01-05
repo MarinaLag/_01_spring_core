@@ -8,7 +8,7 @@ public class Main05_02 {
 
         var ctx = new AnnotationConfigApplicationContext(AppConfigBook.class);
 
-        var lib = ctx.getBean("library",Library.class);
+        var lib = ctx.getBean("library", Library.class);
         System.out.println(lib);
     }
 }

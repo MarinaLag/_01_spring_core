@@ -23,4 +23,5 @@ public class Book {
                 .add("title='" + title + "'")
                 .toString();
     }
+
 }

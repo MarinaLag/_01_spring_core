@@ -20,7 +20,7 @@ public class Main02 {
         cars.forEach(System.out::println);
 
         System.out.println("==========ComplexCar=============");
-        var car7 =ctx.getBean("car7",ComplexCar.class);
+        var car7 = ctx.getBean("car7", ComplexCar.class);
         System.out.println(car7);
     }
 }

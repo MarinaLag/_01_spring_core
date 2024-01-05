@@ -14,6 +14,6 @@ public class Dao {
 
     @Override
     public String toString() {
-        return "Dao objec.Connection manager: " + connectionManager;
+        return "Dao object.Connection manager: " + connectionManager;
     }
 }

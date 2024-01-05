@@ -17,6 +17,7 @@ public class Library {
         return books;
     }
 
+    //@Autowired – над полем не рекомендуется. или конструктор или над сеттером
     @Autowired
     public void setBooks(List<Book> books) {
         this.books = books;
